@@ -24,6 +24,6 @@ When('leaving time as {string}', (leavingTime) => {
 When('the user clicks the calculator button', () => {
     parkingCost.clickCalculateButton();
 });
-Then('the estimated total parking cost should be displyed as {string}', (expectedPackingCost) =>{
+Then('the estimated total parking cost should be displayed as {string}', (expectedPackingCost) =>{
     parkingCost.verifyTotalCost(expectedPackingCost);
 })

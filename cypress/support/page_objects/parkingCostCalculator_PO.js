@@ -88,7 +88,8 @@ selectShortTermLot() {
   }
   enterShortTermEntryTime() {
     cy.get(this.entryTimeInput).clear();
-    cy.get(this.entryTimeInput).type("14:00");
+    cy.get(this.entryTimeInput).type("02:00");
+    cy.get(this.entryRadioInput).check();
   }
   enterShortTermLeavingDate() {
     cy.get(this.leavingDateInput).clear();
@@ -96,13 +97,13 @@ selectShortTermLot() {
   }
   enterShortTermLeavingTime() {
     cy.get(this.leavingTimeInput).clear();
-    cy.get(this.leavingTimeInput).type("14:00");
+    cy.get(this.leavingTimeInput).type("02:00");
     cy.get(this.leavingRadioInput).check();
   }
   verifyShortTermTotalCost() {
     cy.get("tr:nth-of-type(4) > td:nth-of-type(2)").should(
         "contain.text",
-        "$ 9.00        (1 Days, 0 Hours, 0 Minutes)"
+        "$ 24.00"
       );
   }
 }
