@@ -18,7 +18,7 @@ export default defineConfig({
       openMode:0
     },
     env: {
-      parking_Cost_Calculator_url: "http://www.shino.de/parkcalc/",
+      example_Page_url: "http://localhost:63342/Omniplex-Learning-dev/index.html?_ijt=iinkhimdmlog6g7sq0hqe3uo11#",
     },
     async setupNodeEvents(
       on: Cypress.PluginEvents,
